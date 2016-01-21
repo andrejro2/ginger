@@ -103,7 +103,7 @@ function initPage() {
                 navigationPosition: 'left',
                 navigationTooltips: ['1', '2', '3', '4', '5'],
                 afterLoad: function(anchorLink, index){
-                    if(index==3)
+                    if(index==3||index==1)
                     {
                         reloadslide();
                     }
