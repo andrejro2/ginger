@@ -357,7 +357,7 @@ header
     }
     &-title
     {
-      font-size: 3.611em;
+      font-size: 2.44em;
       font-weight: 300;
       line-height: 1.1em;
       color: white;
@@ -634,6 +634,14 @@ header
   background: @brand-danger;
   color: white;
   text-align: center;
+  a
+  {
+    color: white;
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
   .awardsblock
   {
     max-width: 1396px;
@@ -688,7 +696,7 @@ header
     {
       box-sizing: border-box;
       padding-top: 60px;
-      height: 40%;
+      height: 49%;
       position: absolute;
       width: 100%;
       top: 0px;
@@ -697,7 +705,7 @@ header
   .kontaktblock
   {
 
-    height: 60%;
+    height: 51%;
     position: absolute;
     width: 100%;
     bottom: 0px;
@@ -1277,14 +1285,66 @@ header
     }
   }
 }
+.bslider
+{
+  li
+  {
+    position: relative;
+    img
+    {
+      width: 100%;
+    }
+  }
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property:    -moz-transform, opacity;
+  -ms-transition-property:     -ms-transform, opacity;
+  -o-transition-property:      -o-transform, opacity;
+  transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.__fullwork {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
 .__fullwork
 {
   display: none;
 
   position: absolute;
+  -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+  animation-play-state: paused;
   &.__showitem
   {
     display: block;
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
   }
 }
 ul.__warrow
@@ -2409,5 +2469,14 @@ footer
   .frontpage.fullfront.fp-viewing-nullPage header
   {
     padding-top: 21px;
+  }
+}
+@media only screen and (max-height: 930px) {
+  .awardsblock
+  {
+    img
+    {
+      max-width: 60%;
+    }
   }
 }

@@ -289,7 +289,7 @@
                     </div>
 
 
-                    <div class="col-sm-4 col-lg-3 col-xs-6 grid-item verejnost __topwork"  data-id="item9">
+                    <div class="col-sm-4 col-lg-3 col-xs-6 grid-item klient __topwork"  data-id="item9">
                         <a href="#" class="transition">
                             <figure class="workitem">
                                 <div class="workitem-desc-tag"><span class=" __lemon">Pre klienta</span></div>
@@ -297,7 +297,7 @@
                             </figure>
                         </a>
                     </div>
-                    <div class="__fullwork col-sm-12 col-xs-12 grid-item verejnost" id="item9">
+                    <div class="__fullwork col-sm-12 col-xs-12 grid-item klient" id="item9">
 
                         <div class="container">
                             <div class="ourwork-inner">
@@ -840,7 +840,15 @@
             // options
             itemSelector: '.grid-item',
             percentPosition: true,
-            layoutMode: 'packery'
+            layoutMode: 'packery',
+            transitionDuration: '0.7s',
+            // only opacity for reveal/hide transition
+            hiddenStyle: {
+                opacity: 0
+            },
+            visibleStyle: {
+                opacity: 1
+            }
         });
         $grid.imagesLoaded().progress( function() {
             $grid.isotope('layout');
@@ -849,6 +857,7 @@
 
         // filter items on button click
         $('.grid-nav li').on( 'click', 'a', function() {
+            $('.__fullwork').removeClass('__showitem');
             var filterValue = $(this).attr('data-filter');
             $('.grid-nav li a').removeClass('__active');
             $(this).addClass('__active');
@@ -857,7 +866,7 @@
         });
         $grid.on( 'click', '.grid-item.__topwork', function() {
             $('.__fullwork').removeClass('__showitem');
-            $grid.isotope('layout');
+          //  $grid.isotope('layout');
             var prodid= $(this).attr('data-id');
             $('#'+prodid).addClass('__showitem');
             if($('#'+prodid+' ul.bslider').length)

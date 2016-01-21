@@ -93,6 +93,9 @@
                                                     <li full="content/images/works/3.jpg">
                                                         <img src="content/images/works/3.jpg" alt="">
                                                     </li>
+                                                    <li full="content/images/works/1.jpg">
+                                                        <img src="content/images/works/1.jpg" alt="">
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -146,6 +149,9 @@
                                                 <li full="content/images/works/6.jpg">
                                                     <img src="content/images/works/6.jpg" alt="">
                                                 </li>
+                                                <li full="content/images/works/4.jpg">
+                                                    <img src="content/images/works/4.jpg" alt="">
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -198,6 +204,9 @@
                                                 </li>
                                                 <li full="content/images/works/9.jpg">
                                                     <img src="content/images/works/9.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/7.jpg">
+                                                    <img src="content/images/works/7.jpg" alt="">
                                                 </li>
                                             </ul>
                                         </div>
@@ -477,22 +486,42 @@
 <script>
     $(document).ready(function() {
         initPage();
+        var config = {
+            pager: false,
+            auto: true,
+            infiniteLoop: false,
+            pause: 7000,
+            onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+                // load the image file
 
-        $('.bxslider').bxSlider(
-                {
-                    pager: false,
-                    auto: true
-                }
-        );
+                var imageelement = $slideElement.find('img');
+                imageelement.attr('src', imageelement.attr('imagesrc'));
+            },
+            onSliderLoad: function () {
+                $('.bxslider li img').css('display', 'block');
+            }
+        };
+        var sliders = new Array();
+        $('.bxslider').each(function(i, slider) {
+            sliders[i] = $(slider).bxSlider();
+        });
+        function reloadslide() {
+            $.each(sliders, function(i, slider) {
+                slider.reloadSlider(config);
+            });
+        }
+
         var waypoints = $('#product1').waypoint({
             handler: function() {
                 $('body').toggleClass('__shoprod1');
+                reloadslide();
             },
             offset: '5%'
         })
         var waypoints = $('#product2').waypoint({
             handler: function() {
                 $('body').toggleClass('__shoprod2');
+                reloadslide();
             },
             offset: '25%'
         })
@@ -500,6 +529,7 @@
         var waypoints = $('#product3').waypoint({
             handler: function() {
                 $('body').toggleClass('__shoprod3');
+                reloadslide();
             },
             offset: '25%'
         })
@@ -507,6 +537,7 @@
         var waypoints = $('#product4').waypoint({
             handler: function() {
                 $('body').toggleClass('__shoprod4');
+                reloadslide();
             },
             offset: '25%'
         })
