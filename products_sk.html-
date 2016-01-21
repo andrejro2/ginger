@@ -1,0 +1,516 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]>
+<html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gingers.sk</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+    <meta name="Copyright" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700&subset=latin,latin-ext'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.fullpage.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.sidr.light.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <script src="assets/js/libs/prefixfree.min.js"></script>
+    <script src="assets/js/libs/modernizr-3.2.0.base.js"></script>
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="">
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+
+</head>
+
+<body class="frontpage __shoprod1 insidepage">
+
+<div class="wrapper">
+
+    <header class="__notfixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"><a href="index_sk.html" class="logo"></a></div>
+                <a id="simple-menu" href="#sidr-main"><span></span></a>
+
+                <div class="col-sm-10 text-right tomobmenu" id="navigation">
+                    <nav>
+                        <ol id="menu">
+                            <li><a href="ourwork_sk.html">Naša práca</a></li>
+                            <li class="active"><a href="products_sk.html">Naše produkty</a></li>
+                            <li><a href="about_sk.html">O nás </a></li>
+                            <li><a href="praca_sk.html">Spolupráca</a></li>
+                            <li><a href="#" class="opencontact">Kontakt</a></li>
+                        </ol>
+                    </nav>
+                    <a href="index_en.html" class="language_changer">EN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="products">
+        <div class="section __prod1" id="product1">
+            <div class="section-wrapper">
+                <div class="prodblock">
+                        <div class="row row-no-padding">
+                            <div class="col-sm-7 col-xs-12" data-mh="prod">
+                                <div class="prodblockleft">
+                                    <div class="prodblockleft-shtora"></div>
+                                    <div class="prodblockleft-right-wrapper">
+                                        <div class="prodblockleft-right">
+                                            <div class="prodblockleft-right-slider">
+                                                <ul class="bxslider">
+                                                    <li full="content/images/works/1.jpg">
+                                                        <img src="content/images/works/1.jpg" alt="">
+                                                    </li>
+                                                    <li full="content/images/works/2.jpg">
+                                                        <img src="content/images/works/2.jpg" alt="">
+                                                    </li>
+                                                    <li full="content/images/works/3.jpg">
+                                                        <img src="content/images/works/3.jpg" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-xs-12" data-mh="prod">
+                                <div class="__table">
+                                    <div class="__td">
+                                        <div class="prodblock-wrapper">
+                                            <div class="prodblock-title">
+                                                Softskills kurz
+                                            </div>
+                                            <div class="prodblock-subtitle">
+                                                1. Efektivny manager
+                                            </div>
+                                            <div class="prodblock-text">
+                                                Jeden z ready-made soft skills kurzov z produkcie GINGERS.<br>
+                                                Chcete si štúdium monitorovať?<br>
+                                                Ponukáme vám ku kurzu aj náš špičkový LMS.
+                                                <div class="prodblock-text-tag"><em>#manazment casu</em></div>
+                                            </div>
+                                            <a href="#" class="buttonbord __orng __bigbtn">OBJEDNAŤ KURZ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section __prod2" id="product2">
+            <div class="section-wrapper">
+                <div class="prodblock">
+                    <div class="row row-no-padding">
+                        <div class="col-sm-7 col-xs-12" data-mh="prod">
+                            <div class="prodblockleft">
+                                <div class="prodblockleft-shtora"></div>
+                                <div class="prodblockleft-right-wrapper">
+                                    <div class="prodblockleft-right">
+                                        <div class="prodblockleft-right-slider">
+                                            <ul class="bxslider">
+                                                <li full="content/images/works/1.jpg">
+                                                    <img src="content/images/works/1.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/2.jpg">
+                                                    <img src="content/images/works/2.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/3.jpg">
+                                                    <img src="content/images/works/3.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-xs-12" data-mh="prod">
+                            <div class="__table">
+                                <div class="__td">
+                                    <div class="prodblock-wrapper">
+                                        <div class="prodblock-title">
+                                            Softskills kurz
+                                        </div>
+                                        <div class="prodblock-subtitle">
+                                            2. Efektivny manager
+                                        </div>
+                                        <div class="prodblock-text">
+                                            Jeden z ready-made soft skills kurzov z produkcie GINGERS.<br>
+                                            Chcete si štúdium monitorovať?<br>
+                                            Ponukáme vám ku kurzu aj náš špičkový LMS.
+                                            <div class="prodblock-text-tag"><em>#manazment casu</em></div>
+                                        </div>
+                                        <a href="#" class="buttonbord __white __bigbtn">OBJEDNAŤ KURZ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section __prod3" id="product3">
+            <div class="section-wrapper">
+                <div class="prodblock">
+                    <div class="row row-no-padding">
+                        <div class="col-sm-7 col-xs-12" data-mh="prod">
+                            <div class="prodblockleft">
+                                <div class="prodblockleft-shtora"></div>
+                                <div class="prodblockleft-right-wrapper">
+                                    <div class="prodblockleft-right">
+                                        <div class="prodblockleft-right-slider">
+                                            <ul class="bxslider">
+                                                <li full="content/images/works/1.jpg">
+                                                    <img src="content/images/works/1.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/2.jpg">
+                                                    <img src="content/images/works/2.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/3.jpg">
+                                                    <img src="content/images/works/3.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-xs-12" data-mh="prod">
+                            <div class="__table">
+                                <div class="__td">
+                                    <div class="prodblock-wrapper">
+                                        <div class="prodblock-title">
+                                            Softskills kurz
+                                        </div>
+                                        <div class="prodblock-subtitle">
+                                            3. Efektivny manager
+                                        </div>
+                                        <div class="prodblock-text">
+                                            Jeden z ready-made soft skills kurzov z produkcie GINGERS.<br>
+                                            Chcete si štúdium monitorovať?<br>
+                                            Ponukáme vám ku kurzu aj náš špičkový LMS.
+                                            <div class="prodblock-text-tag"><em>#manazment casu</em></div>
+                                        </div>
+                                        <a href="#" class="buttonbord __orng __bigbtn">OBJEDNAŤ KURZ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section __prod4" id="product4">
+            <div class="section-wrapper">
+                <div class="prodblock">
+                    <div class="row row-no-padding">
+                        <div class="col-sm-7 col-xs-12" data-mh="prod">
+                            <div class="prodblockleft">
+                                <div class="prodblockleft-shtora"></div>
+                                <div class="prodblockleft-right-wrapper">
+                                    <div class="prodblockleft-right">
+                                        <div class="prodblockleft-right-slider">
+                                            <ul class="bxslider">
+                                                <li full="content/images/works/1.jpg">
+                                                    <img src="content/images/works/1.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/2.jpg">
+                                                    <img src="content/images/works/2.jpg" alt="">
+                                                </li>
+                                                <li full="content/images/works/3.jpg">
+                                                    <img src="content/images/works/3.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-xs-12" data-mh="prod">
+                            <div class="__table">
+                                <div class="__td">
+                                    <div class="prodblock-wrapper">
+                                        <div class="prodblock-title">
+                                            Softskills kurz
+                                        </div>
+                                        <div class="prodblock-subtitle">
+                                            4. Efektivny manager
+                                        </div>
+                                        <div class="prodblock-text">
+                                            Jeden z ready-made soft skills kurzov z produkcie GINGERS.<br>
+                                            Chcete si štúdium monitorovať?<br>
+                                            Ponukáme vám ku kurzu aj náš špičkový LMS.
+                                            <div class="prodblock-text-tag"><em>#manazment casu</em></div>
+                                        </div>
+                                        <a href="#" class="buttonbord __white __bigbtn">OBJEDNAŤ KURZ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section __prod5" id="product5">
+            <div class="section-wrapper">
+                <div class="products-lms prodblock">
+                    <div class="row row-no-padding">
+                        <div class="col-sm-7 col-xs-12 text-center" data-mh="prod">
+                            <div class="products-imagec"><img src="content/images/products/lms.png" alt="ginger LMS" class="img-responsive img-center"/></div>
+                        </div>
+                        <div class="col-sm-5 col-xs-12" data-mh="prod">
+                            <div class="__table">
+                                <div class="__td">
+                                    <div class="prodblock-wrapper">
+                                        <div class="prodblock-title">
+                                            LMS
+                                        </div>
+                                        <div class="prodblock-subtitle">
+                                            5. Gingers LMS
+                                        </div>
+                                        <div class="prodblock-text">
+                                            <p>Jeden z ready-made soft skills kurzov z produkcie GINGERS.</p>
+
+                                            <p><strong>Jeho vyhodamy su:</strong></p>
+                                            <ul class="__warrow __redarr">
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="buttonbord __rd __bigbtn">CHCEM ZISTIT VIAC</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section __prod6" id="product6">
+            <div class="section-wrapper">
+                <div class="products-lms prodblock">
+                    <div class="row row-no-padding">
+                        <div class="col-sm-7 col-xs-12 text-center" data-mh="prod">
+                            <div class="products-imagec"><img src="content/images/products/docu.png" alt="Docebo LMS" class="img-responsive img-center"/></div>
+                        </div>
+                        <div class="col-sm-5 col-xs-12" data-mh="prod">
+                            <div class="__table">
+                                <div class="__td">
+                                    <div class="prodblock-wrapper">
+                                        <div class="prodblock-title">
+                                            LMS
+                                        </div>
+                                        <div class="prodblock-subtitle">
+                                            6. Docebo LMS
+                                        </div>
+                                        <div class="prodblock-text">
+                                            <p>Jeden z ready-made soft skills kurzov z produkcie GINGERS.</p>
+
+                                            <p><strong>Jeho vyhodamy su:</strong></p>
+                                            <ul class="__warrow __wharr">
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                                <li>
+                                                    Jeden z ready-made soft skills kurzov z produkcie GINGERS.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="buttonbord __white __bigbtn">CHCEM ZISTIT VIAC</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+           <div class="row">
+                <div class="kontaktblock text-center __insidepage">
+                    <div class="__table">
+                        <div class="__td">
+                            <div about="container">
+                                <h3>
+                                    Chcete, aby sme vám vymysleli niečo inovatívne?
+                                </h3>
+
+                                <div class="kontaktblock-text">
+                                    <div class="container">Text o spolupraci najviac na dva tri riadky, v texte by mal
+                                        byt
+                                        call to action text na button, 
+                                        ktory je pod textom a nieco ako moznost spoluprace, alebo ak nevedia, nech rovno
+                                        kontaktuju
+                                    </div>
+                                </div>
+                                <div class="kontaktblock-buttons">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="button __red">SPOLUPRACUJTE S NAMI</a>
+                                        </li>
+                                        <li>
+                                            <span>alebo</span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="button __darkorange opencontact">KONTAKTUJTE NÁS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <a href="#" class="footer-close"></a>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <p>Máte záujem inovovať svoje vzdelávanie? <br/>
+                    Chcete pre nás pracovať alebo spolupracovať s nami? </p>
+                <p>Radi sa s vami stretneme a spoznáme vás.</p>
+                <p class="__white">Copyright© 2015 GINGERS</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="footer-title">Kontaktujte nás</div>
+                <div class="row __footerrow">
+                    <div class="col-sm-3 col-xs-3">
+                        <div class="footer-white">sídlo:</div>
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                        Hanulova 19, 841 02 Bratislava
+                    </div>
+                </div>
+                <div class="row __footerrow">
+                    <div class="col-sm-3 col-xs-3">
+                        <div class="footer-white">e-mail:</div>
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                        gingers@gingers.sk
+                    </div>
+                </div>
+                <div class="row __footerrow">
+                    <div class="col-sm-3 col-xs-3">
+                        <div class="footer-white">telefón:</div>
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                        +421 905 401 757
+                    </div>
+                </div>
+                <div class="row __footerrow">
+                    <div class="col-sm-3  col-xs-3">
+                        <div class="footer-white">social:</div>
+                    </div>
+                    <div class="col-sm-9  col-xs-9">
+                        <a href="" class="__soc1"></a>
+                        <a href="" class="__soc2"></a>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
+<script src="assets/js/libs/jquery.sidr.js"></script>
+<script src="assets/js/libs/jquery.fullpage.min.js"></script>
+<script src="assets/js/libs/jquery.matchHeight.js"></script>
+<script src="assets/js/libs/jquery.bxslider.min.js"></script>
+<script src="assets/js/libs/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/libs/isotope.pkgd.min.js"></script>
+<script src="assets/js/libs/jquery.waypoints.min.js"></script>
+<script src="assets/js/functions.js"></script>
+<script>
+    $(document).ready(function() {
+        initPage();
+
+        $('.bxslider').bxSlider(
+                {
+                    pager: false,
+                    auto: true
+                }
+        );
+        var waypoints = $('#product1').waypoint({
+            handler: function() {
+                $('body').toggleClass('__shoprod1');
+            },
+            offset: '5%'
+        })
+        var waypoints = $('#product2').waypoint({
+            handler: function() {
+                $('body').toggleClass('__shoprod2');
+            },
+            offset: '25%'
+        })
+
+        var waypoints = $('#product3').waypoint({
+            handler: function() {
+                $('body').toggleClass('__shoprod3');
+            },
+            offset: '25%'
+        })
+
+        var waypoints = $('#product4').waypoint({
+            handler: function() {
+                $('body').toggleClass('__shoprod4');
+            },
+            offset: '25%'
+        })
+    });
+</script>
+
+
+</body>
+</html>
