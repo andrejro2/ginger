@@ -431,7 +431,10 @@
 <script src="assets/js/libs/jquery.waypoints.min.js"></script>
 <script src="assets/js/functions.js"></script>
 <script>$(document).ready(initPage);</script>
-
-
+<script>
+    $(document).ready(function() {
+        $.fn.fullpage.reBuild();
+    });
+</script>
 </body>
 </html>

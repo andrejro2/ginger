@@ -1909,3 +1909,16 @@ footer .__soc2 {
     max-width: 60%;
   }
 }
+@media only screen and (max-height: 768px) {
+  .awardsblock img {
+    max-width: 51%;
+  }
+  .workitem-desc {
+    font-size: 1.64em;
+    padding: 10px 10px 10px 10px;
+    line-height: 1.2em;
+  }
+  .more-view {
+    padding-top: 20px;
+  }
+}
