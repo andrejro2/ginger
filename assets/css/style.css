@@ -93,13 +93,13 @@ header {
 .frontpage header .logo {
   display: block;
   width: 178px;
-  height: 40px;
-  background: url(../images/logo2.svg) no-repeat center center;
+  height: 31px;
+  background: url(../images/logo2.png) no-repeat center center;
   background-size: cover;
 }
 .frontpage header .logo.__smaller {
-  width: 115px;
-  height: 27px;
+  width: 127px;
+  height: 21px;
   margin-top: 7px;
 }
 .frontpage header nav {
@@ -143,15 +143,15 @@ header {
   color: white;
 }
 .fp-viewing-3rdPage header .logo {
-  background: url(../images/logo1.svg) no-repeat center center;
+  background: url(../images/logo1.png) no-repeat center center;
   background-size: cover;
-  width: 115px;
-  height: 27px;
+  width: 127px;
+  height: 21px;
   margin-top: 7px;
 }
 .frontpage.fullfront header .logo {
-  width: 115px;
-  height: 27px;
+  width: 127px;
+  height: 21px;
   margin-top: 7px;
 }
 .frontpage.fullfront.fp-viewing-nullPage header {
@@ -161,14 +161,14 @@ header {
 .frontpage.fullfront.fp-viewing-nullPage header .logo {
   display: block;
   width: 178px;
-  height: 40px;
+  height: 31px;
   margin-top: 0px;
-  background: url(../images/logo1.svg) no-repeat center center;
+  background: url(../images/logo1.png) no-repeat center center;
   background-size: cover;
 }
 .frontpage.fullfront.fp-viewing-nullPage header .logo.__smaller {
-  width: 115px;
-  height: 27px;
+  width: 127px;
+  height: 21px;
   margin-top: 7px;
 }
 .frontpage.fullfront.fp-viewing-nullPage header nav ol li a {
@@ -646,11 +646,10 @@ header {
 }
 .sidr-open header .logo,
 .sidr-open header .logo.__smaller {
-  background: url("../images/logo1.svg") no-repeat center center;
+  background: url("../images/logo1.png") no-repeat center center;
   background-size: cover;
   width: 178px !important;
-  height: 40px !important;
-  top: 5px;
+  height: 31px !important;
   position: relative;
 }
 .fp-viewing-nullPage #simple-menu,
@@ -1736,6 +1735,10 @@ footer .__soc2 {
   .workitem-desc-tag span {
     font-size: 13px;
     padding: 7px 21px;
+  }
+  .logo {
+    width: 178px !important;
+    height: 31px !important;
   }
   .button {
     line-height: 1em;
