@@ -748,7 +748,7 @@
                                 <div class="kontaktblock-buttons">
                                     <ul>
                                         <li>
-                                            <a href="#" class="button __red">SPOLUPRACUJTE S NAMI</a>
+                                            <a href="praca_sk.html" class="button __red">SPOLUPRACUJTE S NAMI</a>
                                         </li>
                                         <li>
                                             <span>alebo</span>
@@ -888,17 +888,34 @@
         });
         if(hash)
         {
-            $grid.isotope('layout');
-            $('#'+hash).addClass('__showitem');
-            if($('#'+hash+' ul.bslider').length)
+            if(hash=='klient'||hash=='verejnost'||hash=='skola')
             {
-                $('#'+hash+' .bslider').bxSlider({
-                    mode: 'fade',
-                    pager: false,
-                    controls: true
+                $( ".grid-nav li a" ).removeClass( '__active');
+                $( ".grid-nav li a" ).each(function() {
+                    if($(this).attr('data-filter')=='.'+hash)
+                    {
+                        $( this ).addClass( '__active');
+                    }
+
                 });
+                $grid.isotope({ filter: '.'+hash });
+                $grid.isotope('layout');
+            } else
+            {
+                $grid.isotope('layout');
+                $('#'+hash).addClass('__showitem');
+                if($('#'+hash+' ul.bslider').length)
+                {
+                    $('#'+hash+' .bslider').bxSlider({
+                        mode: 'fade',
+                        pager: false,
+                        controls: true
+                    });
+                }
+                $grid.isotope('layout');
             }
-            $grid.isotope('layout');
+
+
            // $('.grid-item[data-id="'+item6+'"]').trigger('click');
         }
         initPage();
