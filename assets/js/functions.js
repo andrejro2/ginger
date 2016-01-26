@@ -73,7 +73,7 @@ function initPage() {
             pager: false,
             auto: true,
             infiniteLoop: false,
-            pause: 7000,
+            pause: 3000,
             onSlideAfter: function ($slideElement, oldIndex, newIndex) {
                 // load the image file
 

@@ -494,11 +494,14 @@ header {
   font-size: 0.889em;
   font-weight: 800;
 }
+#section4 .awardsblock-n1 {
+  margin-top: -8px;
+}
 #section4 .awardsblock-n2 .awardsblock-desc {
   margin: 77px 0 14px 0;
 }
 #section4 .awardsblock-n3 {
-  padding: 26px 0 0 0;
+  padding: 0;
 }
 #section4 .awardsblock-n4 {
   margin-top: -73px;
@@ -1908,10 +1911,16 @@ footer .__soc2 {
   .awardsblock img {
     max-width: 60%;
   }
+  .kontaktblock-buttons {
+    margin: 38px 0 0 0;
+  }
 }
 @media only screen and (max-height: 768px) {
   .awardsblock img {
     max-width: 51%;
+  }
+  .workitem-text-title {
+    font-size: 1.8em;
   }
   .workitem-desc {
     font-size: 1.64em;
