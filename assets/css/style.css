@@ -995,6 +995,7 @@ header {
 }
 .bslider li {
   position: relative;
+  float: left;
 }
 .bslider li img {
   width: 100%;
@@ -1023,27 +1024,16 @@ header {
   transition-property: transform, opacity;
 }
 /**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.__fullwork {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
 .__fullwork {
   display: none;
   position: absolute;
-  -webkit-animation-play-state: paused;
-  /* Chrome, Safari, Opera */
-  animation-play-state: paused;
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
 }
 .__fullwork.__showitem {
   display: block;
-  -webkit-animation-play-state: paused;
-  /* Chrome, Safari, Opera */
-  animation-play-state: paused;
 }
 ul.__warrow {
   list-style-type: none;

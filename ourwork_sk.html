@@ -867,16 +867,45 @@
         });
         $grid.on( 'click', '.grid-item.__topwork', function() {
             $('.__fullwork').removeClass('__showitem');
-          //  $grid.isotope('layout');
+            // $grid.isotope('layout');
             var prodid= $(this).attr('data-id');
-            $('#'+prodid).addClass('__showitem');
+            var prodidelement = $('#'+prodid);
+            console.log($('#'+prodid).data('isopen'));
+            console.log($('#'+prodid).data('isclose'));
+               if(prodidelement.data('isopen')=='1') {
+                   prodidelement.removeClass('__showitem').data('isopen', '0').data('isclose', '1');
+                   if(prodidelement.data('isclose')==='undefined')
+                   {
+                       prodidelement.addClass('__showitem').data('isopen', '1').data('isclose', '0');
+                   }
+                   else if(prodidelement.data('isclose')=='0')
+                   {
+                       prodidelement.removeClass('__showitem').data('isopen', '0');
+
+                   } else
+                   {
+                       prodidelement.removeClass('__showitem').data('isopen', '0').data('isclose', '1');
+                   }
+           }
+              else
+            {
+                prodidelement.addClass('__showitem').data('isopen', '1').data('isclose', '0');
+            }
+
+            console.log($('#'+prodid).data('isopen'));
+            console.log($('#'+prodid).data('isclose'));
             if($('#'+prodid+' ul.bslider').length)
             {
-                $('#'+prodid+' .bslider').bxSlider({
-                    mode: 'fade',
-                    pager: false,
-                    controls: true
-                });
+                if(prodidelement.find('.bx-wrapper').length==0 )
+                {
+                  var  bslide = $('#'+prodid+' .bslider').bxSlider({
+                        mode: 'fade',
+                        pager: false,
+                        controls: true
+                    });
+                }
+
+
             }
             $grid.isotope('layout');
             return false;
