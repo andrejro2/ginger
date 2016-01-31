@@ -1022,7 +1022,7 @@
             return false;
         });
         $grid.on('click', '.ourwork-inner-close', function () {
-            $('.__fullwork').slideUp('slow');
+            $('.__fullwork').slideUp('slow').data('isclose', '1').data('isopen', '0');
             return false;
         });
         if (hash) {
