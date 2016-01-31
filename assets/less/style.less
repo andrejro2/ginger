@@ -1299,6 +1299,11 @@ header
     img
     {
       width: 100%;
+      &.__vertical
+      {
+        width: auto;
+        max-height: 353px;
+      }
     }
   }
 }
@@ -2082,6 +2087,20 @@ footer
   transform: translate(0, -288px);
 }
 @media only screen and (max-width: 992px) {
+  .bslider
+  {
+
+    li
+    {
+      img
+      {
+        &.__vertical
+        {
+          max-height: 280px;
+        }
+      }
+    }
+  }
   .frontpage header nav ol li
   {
     margin: 2px 10px;
@@ -2138,6 +2157,20 @@ footer
   }
 }
 @media only screen and (max-width: 850px) {
+  .bslider
+  {
+
+    li
+    {
+      img
+      {
+        &.__vertical
+        {
+          max-height: 220px;
+        }
+      }
+    }
+  }
   body
   {
     font-size: 13px;
@@ -2217,6 +2250,20 @@ footer
   }
 }
 @media only screen and (max-width: 580px) {
+  .bslider
+  {
+
+    li
+    {
+      img
+      {
+        &.__vertical
+        {
+          max-height: 160px;
+        }
+      }
+    }
+  }
   .workitem-text-tag, .workitem-desc-tag span
   {
     font-size: 13px;
