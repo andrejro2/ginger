@@ -80,13 +80,13 @@
                           <a href="" data-filter="*" class="__active">Všetky</a>
                       </li>
                       <li>
-                          <a href="" data-filter=".klient">Pre klienta</a>
+                          <a href="" data-filter="klient">Pre klienta</a>
                       </li>
                       <li>
-                          <a href="" data-filter=".verejnost">Pre verejnosť</a>
+                          <a href="" data-filter="verejnost">Pre verejnosť</a>
                       </li>
                       <li>
-                          <a href="" data-filter=".skola">Pre školy</a>
+                          <a href="" data-filter="skola">Pre školy</a>
                       </li>
                   </ul>
                 </div>
@@ -828,45 +828,33 @@
 <script src="assets/js/libs/jquery.matchHeight.js"></script>
 <script src="assets/js/libs/jquery.bxslider.min.js"></script>
 <script src="assets/js/libs/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/libs/isotope.pkgd.min.js"></script>
-<script src="assets/js/libs/packery-mode.pkgd.min.js"></script>
 <script src="assets/js/libs/jquery.waypoints.min.js"></script>
 <script src="assets/js/functions.js"></script>
 <script>
     $(document).ready(function() {
         var hash = window.location.hash.substring(1);
 
-
-        var $grid = $('#grid').isotope({
-            // options
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            layoutMode: 'packery',
-            transitionDuration: '0.7s',
-            // only opacity for reveal/hide transition
-            hiddenStyle: {
-                opacity: 0
-            },
-            visibleStyle: {
-                opacity: 1
-            }
-        });
-        $grid.imagesLoaded().progress( function() {
-
-            $grid.isotope('layout');
-        });
-
+        var $grid = $('#grid');
 
         // filter items on button click
-        $('.grid-nav li').on( 'click', 'a', function() {
+        $('.grid-nav li a').click(function() {
             $('.__fullwork').removeClass('__showitem');
             var filterValue = $(this).attr('data-filter');
             $('.grid-nav li a').removeClass('__active');
             $(this).addClass('__active');
-            $grid.isotope({ filter: filterValue });
+            console.log(filterValue);
+            $('#grid .grid-item').hide();
+            if(filterValue=='*')
+            {
+                $('#grid .grid-item:not(.__fullwork)').fadeOut('slow');
+            } else
+            {
+                $('#grid .grid-item.'+filterValue+':not(.__fullwork)').fadeToggle('slow');
+            }
+
             return false;
         });
-        $grid.on( 'click', '.grid-item.__topwork', function() {
+       /* $grid.on( 'click', '.grid-item.__topwork', function() {
             $('.__fullwork').removeClass('__showitem');
 
             var prodid= $(this).attr('data-id');
@@ -911,11 +899,10 @@
             $grid.isotope('layout');
             return false;
         });
-
+*/
         $grid.on( 'click', '.ourwork-inner-close', function() {
             $('.__fullwork').removeClass('__showitem');
-            $grid.isotope('layout');
-            return false;
+                return false;
         });
         if(hash)
         {
