@@ -842,16 +842,43 @@
             var filterValue = $(this).attr('data-filter');
             $('.grid-nav li a').removeClass('__active');
             $(this).addClass('__active');
-            console.log(filterValue);
             $('#grid .grid-item').hide();
             if(filterValue=='*')
             {
-                $('#grid .grid-item:not(.__fullwork)').fadeOut('slow');
+                $('#grid .grid-item:not(.__fullwork)').fadeIn('slow');
             } else
             {
                 $('#grid .grid-item.'+filterValue+':not(.__fullwork)').fadeToggle('slow');
             }
-
+            return false;
+        });
+        $('.grid-item.__topwork').click(function() {
+            $('.__fullwork').hide();
+            var prodid= $(this).attr('data-id');
+            var prodidelement = $('#'+prodid);
+            var curenttoppos = $(this).position().top;
+            console.log(curenttoppos);
+            $( ".grid-item.__topwork" ).each(function(index) {
+              //  console.log( index + ": " + $( this ).attr('data-id'));
+                if($(this).position().top  == curenttoppos)
+                {
+                    lastelement = $(this).attr('data-id');
+                }
+            });
+            prodidelement.insertAfter( "#"+lastelement );
+            if($('#'+prodid+' ul.bslider').length)
+            {
+                if(prodidelement.find('.bx-wrapper').length==0 )
+                {
+                    bslide = $('#'+prodid+' .bslider').bxSlider({
+                        mode: 'fade',
+                        pager: false,
+                        controls: true
+                    });
+                }
+            }
+            prodidelement.slideDown('slow');
+            bslide.reloadSlider();
             return false;
         });
        /* $grid.on( 'click', '.grid-item.__topwork', function() {
@@ -901,7 +928,7 @@
         });
 */
         $grid.on( 'click', '.ourwork-inner-close', function() {
-            $('.__fullwork').removeClass('__showitem');
+            $('.__fullwork').slideUp('slow');
                 return false;
         });
         if(hash)
