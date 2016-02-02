@@ -953,7 +953,7 @@
 <script>
     $(document).ready(function () {
         var hash = window.location.hash.substring(1);
-
+        bslide='';
         var $grid = $('#grid');
 
         // filter items on button click
@@ -996,7 +996,7 @@
                 if(prodidelement.data('isclose')==='undefined')
                 {
                     prodidelement.slideDown('slow').data('isopen', '1').data('isclose', '0');
-                    if(bslide!=='undefined')
+                    if(bslide)
                     {
                         bslide.reloadSlider();
                     }
@@ -1013,7 +1013,7 @@
             else
             {
                 prodidelement.slideDown('slow').data('isopen', '1').data('isclose', '0');
-                if(bslide!=='undefined')
+                if(bslide)
                 {
                     bslide.reloadSlider();
                 }
@@ -1063,7 +1063,10 @@
                     }
                 }
                 prodidelement.slideDown('slow');
-                bslide.reloadSlider();
+                if(bslide)
+                {
+                    bslide.reloadSlider();
+                }
                 var divPosition = $('#' + prodid).offset();
                 $('html, body').animate({scrollTop: divPosition.top}, "slow");
                 return false;

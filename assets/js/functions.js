@@ -72,9 +72,9 @@ function initPage() {
 
     //Spolupraca
 
-    $('.spolupraca-td .__pluses span').click(function() {
+    $('.spolupraca-td .__pluses li').click(function() {
         $('.spolupraca-td .__pluses li').removeClass('__hovered');
-        $(this).parent('li').toggleClass('__hovered');
+        $(this).toggleClass('__hovered');
     });
     if ($('#fullpage').length) {
         var config = {
@@ -127,6 +127,8 @@ function initPage() {
         },
         offset: -25
     })
-
+    $('._equal').matchHeight({
+        byRow: true
+    });
 
 };

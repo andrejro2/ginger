@@ -94,12 +94,12 @@ header {
   display: block;
   width: 178px;
   height: 31px;
-  background: url(../images/logo2.png) no-repeat center center;
+  background: url(../images/logo2.svg) no-repeat center center;
   background-size: cover;
 }
 .frontpage header .logo.__smaller {
   width: 127px;
-  height: 21px;
+  height: 22px;
   margin-top: 7px;
 }
 .frontpage header nav {
@@ -143,15 +143,15 @@ header {
   color: white;
 }
 .fp-viewing-3rdPage header .logo {
-  background: url(../images/logo1.png) no-repeat center center;
+  background: url(../images/logo1.svg) no-repeat center center;
   background-size: cover;
   width: 127px;
-  height: 21px;
+  height: 22px;
   margin-top: 7px;
 }
 .frontpage.fullfront header .logo {
   width: 127px;
-  height: 21px;
+  height: 22px;
   margin-top: 7px;
 }
 .frontpage.fullfront.fp-viewing-nullPage header {
@@ -163,12 +163,12 @@ header {
   width: 178px;
   height: 31px;
   margin-top: 0px;
-  background: url(../images/logo1.png) no-repeat center center;
+  background: url(../images/logo1.svg) no-repeat center center;
   background-size: cover;
 }
 .frontpage.fullfront.fp-viewing-nullPage header .logo.__smaller {
   width: 127px;
-  height: 21px;
+  height: 22px;
   margin-top: 7px;
 }
 .frontpage.fullfront.fp-viewing-nullPage header nav ol li a {
@@ -331,6 +331,9 @@ header {
 .more-view.__redcolor a:before {
   background: url("../images/sprite.png") no-repeat -26px -21px;
 }
+.prodblock-wrapper {
+  padding-right: 30px;
+}
 .prodblock .workitem-text-link {
   color: #e31738;
 }
@@ -458,6 +461,23 @@ header {
 }
 .products .__prod6 .prodblock-subtitle {
   color: white;
+}
+.products .__prod7 {
+  background: #ffc800;
+}
+.products .__prod7 .prodblock-title {
+  font-size: 2.111em;
+}
+.products .__prod7 .prodblock-subtitle {
+  color: white;
+  padding-left: 50px;
+  max-width: 700px;
+}
+.products .__prod7 .__warrow li {
+  margin: 0 0 3px 0;
+}
+.products .__prod7 .__warrow li ul {
+  margin: 3px 0 0 0;
 }
 .products-imagec {
   padding: 10px 30px;
@@ -646,7 +666,7 @@ header {
 }
 .sidr-open header .logo,
 .sidr-open header .logo.__smaller {
-  background: url("../images/logo1.png") no-repeat center center;
+  background: url("../images/logo1.svg") no-repeat center center;
   background-size: cover;
   width: 178px !important;
   height: 31px !important;
@@ -1060,7 +1080,7 @@ ul.__warrow.__redarr li:before {
   background: url(../images/sprite.png) no-repeat -30px -47px;
 }
 ul.__warrow.__wharr li:before {
-  background: url(../images/sprite.png) no-repeat -60px -47px;
+  background: url(../images/sprite.png) no-repeat -55px -47px;
 }
 ul.__warrow2 {
   list-style-type: none;
@@ -1098,6 +1118,7 @@ ul.__pluses li {
   position: relative;
   font-weight: 600;
   font-size: 1.167em;
+  cursor: pointer;
 }
 ul.__pluses li:before {
   content: "";
@@ -1551,6 +1572,12 @@ footer {
 footer .container {
   position: relative;
 }
+footer a {
+  color: black;
+}
+footer a:hover {
+  color: #ff9200;
+}
 footer p {
   font-weight: 600;
   margin: 0 0 10px 0;
@@ -1726,6 +1753,9 @@ footer .__soc2 {
   }
 }
 @media only screen and (max-width: 580px) {
+  .__prod7 .prodblock-subtitle {
+    padding-left: 0px !important;
+  }
   .bslider li img.__vertical {
     max-height: 160px;
   }

@@ -135,13 +135,13 @@ header
       width: 178px;
       height: 31px;
 
-      background: url(../images/logo2.png) no-repeat center center;
+      background: url(../images/logo2.svg) no-repeat center center;
       background-size: cover;
 
       &.__smaller
       {
         width: 127px;
-        height: 21px;
+        height: 22px;
         margin-top: 7px;
 
       }
@@ -196,10 +196,10 @@ header
     }
     .logo
     {
-      background: url(../images/logo1.png) no-repeat center center;
+      background: url(../images/logo1.svg) no-repeat center center;
       background-size: cover;
       width: 127px;
-      height: 21px;
+      height: 22px;
       margin-top: 7px;
     }
   }
@@ -211,7 +211,7 @@ header
     .logo
     {
       width: 127px;
-      height: 21px;
+      height: 22px;
       margin-top: 7px;
 
     }
@@ -228,12 +228,12 @@ header
       width: 178px;
       height: 31px;
       margin-top: 0px;
-      background: url(../images/logo1.png) no-repeat center center;
+      background: url(../images/logo1.svg) no-repeat center center;
       background-size: cover;
       &.__smaller
       {
         width: 127px;
-        height: 21px;
+        height: 22px;
         margin-top: 7px;
 
       }
@@ -442,6 +442,10 @@ header
 }
 .prodblock
 {
+  &-wrapper
+  {
+    padding-right: 30px;
+  }
   .workitem-text-link
   {
     color: @brand-danger;
@@ -621,6 +625,27 @@ header
     .prodblock-subtitle
     {
       color: white;
+    }
+  }
+  .__prod7
+  {
+    background: @lemon;
+    .prodblock-title
+    {
+      font-size: 2.111em;
+    }
+    .prodblock-subtitle
+    {
+      color: white;
+      padding-left: 50px;
+      max-width: 700px;
+    }
+    .__warrow li{
+      margin: 0 0 3px 0;
+      ul
+      {
+        margin: 3px 0 0 0;
+      }
     }
   }
   &-imagec
@@ -849,7 +874,7 @@ header
   {
     background: transparent !important;
     .logo, .logo.__smaller {
-      background: url("../images/logo1.png") no-repeat center center;
+      background: url("../images/logo1.svg") no-repeat center center;
       background-size: cover;
       width: 178px !important;
       height: 31px !important;
@@ -1380,7 +1405,7 @@ ul.__warrow.__wharr
 {
   li{
     &:before{
-      background: url(../images/sprite.png) no-repeat -60px -47px;
+      background: url(../images/sprite.png) no-repeat -55px -47px;
     }
   }
 }
@@ -1421,6 +1446,7 @@ ul.__pluses
     position: relative;
     font-weight: 600;
     font-size: 1.167em;
+    cursor: pointer;
     &:before{
       content: "";
       position: absolute;
@@ -2009,6 +2035,14 @@ footer
   {
     position: relative;
   }
+  a
+  {
+    color: black;
+    &:hover
+    {
+      color: @orange;
+    }
+  }
   p{
     font-weight: 600;
     margin: 0 0 10px 0;
@@ -2250,6 +2284,13 @@ footer
   }
 }
 @media only screen and (max-width: 580px) {
+  .__prod7
+  {
+    .prodblock-subtitle
+    {
+      padding-left: 0px !important;
+    }
+  }
   .bslider
   {
 
@@ -2351,6 +2392,7 @@ footer
   }
 
   .prodblock{
+
     .prodblockleft-shtora
     {
       width: 129px;
