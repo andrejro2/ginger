@@ -10,8 +10,8 @@ function initPage() {
     var delta = 5;
     var navbarHeight = $('header').outerHeight();
 
-    if(isMobile())
-    {
+
+
         $(window).scroll(function(event){
             didScroll = true;
         });
@@ -31,6 +31,7 @@ function initPage() {
 
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
+
             if (st > lastScrollTop && st > navbarHeight){
                 // Scroll Down
                 $('header').removeClass('nav-down').addClass('nav-up');
@@ -43,7 +44,7 @@ function initPage() {
 
             lastScrollTop = st;
         }
-    }
+
 
 
 
@@ -111,6 +112,17 @@ function initPage() {
                 navigationPosition: 'left',
                 navigationTooltips: ['1', '2', '3', '4', '5'],
                 afterLoad: function(anchorLink, index){
+                    $('#fullpage').on("mousewheel",function(event){
+
+                        if (event.originalEvent.wheelDelta >= 0) {
+
+                            $('header').removeClass('nav-up').addClass('nav-down');
+                        }
+                        else {
+                            $('header').removeClass('nav-down').addClass('nav-up');
+                        }
+
+                      });
                     if(index==3||index==1)
                     {
                         reloadslide();

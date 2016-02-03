@@ -92,7 +92,7 @@ header {
 }
 .frontpage header .logo {
   display: block;
-  width: 178px;
+  width: 180px;
   height: 31px;
   background: url(../images/logo2.svg) no-repeat center center;
   background-size: cover;
@@ -160,7 +160,7 @@ header {
 }
 .frontpage.fullfront.fp-viewing-nullPage header .logo {
   display: block;
-  width: 178px;
+  width: 180px;
   height: 31px;
   margin-top: 0px;
   background: url(../images/logo1.svg) no-repeat center center;
@@ -467,6 +467,7 @@ header {
 }
 .products .__prod7 .prodblock-title {
   font-size: 2.111em;
+  line-height: 1.1em;
 }
 .products .__prod7 .prodblock-subtitle {
   color: white;
@@ -668,7 +669,7 @@ header {
 .sidr-open header .logo.__smaller {
   background: url("../images/logo1.svg") no-repeat center center;
   background-size: cover;
-  width: 178px !important;
+  width: 180px !important;
   height: 31px !important;
   position: relative;
 }
@@ -1765,7 +1766,7 @@ footer .__soc2 {
     padding: 7px 21px;
   }
   .logo {
-    width: 178px !important;
+    width: 180px !important;
     height: 31px !important;
   }
   .button {
