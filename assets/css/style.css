@@ -465,20 +465,12 @@ header {
 .products .__prod7 {
   background: #ffc800;
 }
-.products .__prod7 .prodblock-title {
-  font-size: 2.111em;
-  line-height: 1.1em;
-}
 .products .__prod7 .prodblock-subtitle {
   color: white;
-  padding-left: 50px;
   max-width: 700px;
 }
-.products .__prod7 .__warrow li {
-  margin: 0 0 3px 0;
-}
 .products .__prod7 .__warrow li ul {
-  margin: 3px 0 0 0;
+  margin: 24px 0 0 0;
 }
 .products-imagec {
   padding: 10px 30px;
