@@ -94,9 +94,9 @@
                                         <li full="content/images/works/3.jpg">
                                             <img src="content/images/works/3.jpg" alt="">
                                         </li>
-                                        <li full="content/images/works/1.jpg">
+                                      <!--  <li full="content/images/works/1.jpg">
                                             <img src="content/images/works/1.jpg" alt="">
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -156,9 +156,9 @@
                                         <li full="content/images/works/6.jpg">
                                             <img src="content/images/works/6.jpg" alt="">
                                         </li>
-                                        <li full="content/images/works/4.jpg">
+                                   <!--     <li full="content/images/works/4.jpg">
                                             <img src="content/images/works/4.jpg" alt="">
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -218,9 +218,9 @@
                                         <li full="content/images/works/9.jpg">
                                             <img src="content/images/works/9.jpg" alt="">
                                         </li>
-                                        <li full="content/images/works/7.jpg">
+                                       <!-- <li full="content/images/works/7.jpg">
                                             <img src="content/images/works/7.jpg" alt="">
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -499,12 +499,7 @@
                         </div>
                         <div class="kontaktblock-buttons">
                             <ul>
-                                <li>
-                                    <a href="praca_sk.html" class="button __red">SPOLUPRACUJTE S NAMI</a>
-                                </li>
-                                <li>
-                                    <span>alebo</span>
-                                </li>
+
                                 <li>
                                     <a href="#" class="button __darkorange opencontact">KONTAKTUJTE NÁS</a>
                                 </li>
@@ -587,10 +582,11 @@
 <script>
     $(document).ready(function () {
         initPage();
+
         var config = {
             pager: false,
             auto: true,
-            infiniteLoop: false,
+            infiniteLoop: true,
             pause: 3000,
             onSlideAfter: function ($slideElement, oldIndex, newIndex) {
                 // load the image file

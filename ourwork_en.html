@@ -73,7 +73,9 @@
 
 <div class="ourwork">
 <div class="ourwork-wrapper">
+
 <div class="ourwork-filter">
+    <h2 class="text-center">Selection of our work:</h2>
     <div class="filter-options btn-group text-center">
         <ul class="grid-nav">
             <li>
@@ -867,12 +869,7 @@
                         </div>
                         <div class="kontaktblock-buttons">
                             <ul>
-                                <li>
-                                    <a href="praca_en.html" class="button __red">COOPERATE WITH US</a>
-                                </li>
-                                <li>
-                                    <span>or</span>
-                                </li>
+
                                 <li>
                                     <a href="#" class="button __darkorange opencontact">CONTACT US</a>
                                 </li>
@@ -952,6 +949,9 @@
 <script src="assets/js/functions.js"></script>
 <script>
     $(document).ready(function () {
+        $('.container-ofwork').imagesLoaded( function() {
+            setTimeout('$(".container-ofwork").addClass("__showall")', 1000)
+        });
         var hash = window.location.hash.substring(1);
         bslide='';
         var $grid = $('#grid');
