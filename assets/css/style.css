@@ -1301,6 +1301,9 @@ ul.__pluses li.__hovered em {
 .spolupraca-td-buttons {
   padding: 83px 0 49px 0;
 }
+.spolupraca-td-buttons .buttonbord {
+  width: 100%;
+}
 .spolupraca-bubbles {
   background: url(../images/boobs.png);
   height: 32px;
@@ -1604,12 +1607,14 @@ footer p {
 }
 footer p.__white {
   color: white;
+  margin-top: 20px;
 }
 footer .footer-title {
   font-size: 1.667em;
   color: white;
   font-weight: 600;
   margin: 0 0 15px 0;
+  line-height: 1;
 }
 footer .footer-close {
   position: absolute;
@@ -1772,6 +1777,9 @@ footer .__soc2 {
   }
 }
 @media only screen and (max-width: 580px) {
+  footer .footer-close {
+    right: 15px;
+  }
   .__prod7 .prodblock-subtitle {
     padding-left: 0px !important;
   }

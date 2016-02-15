@@ -49,6 +49,12 @@ function initPage() {
 
 
 
+        $('.insidepage header').scrollUpMenu({
+            waitTime: 0,
+            transitionTime: 50,
+            menuCss: { 'position': 'fixed', 'top': '0'}
+        });
+
 
 
     $('#simple-menu').sidr({
@@ -124,6 +130,21 @@ function initPage() {
                         }
 
                       });
+                    // reset touch position on touchstart
+                    var ts;
+                    $('#fullpage').bind('touchstart', function(e) {
+                        ts = e.originalEvent.touches[0].clientY;
+                    });
+
+                    $('#fullpage').bind('touchmove', function(e) {
+                        var te = e.originalEvent.changedTouches[0].clientY;
+                        if (ts > te) {
+                            $('header').removeClass('nav-down').addClass('nav-up');
+                        } else {
+
+                            $('header').removeClass('nav-up').addClass('nav-down');
+                        }
+                    });
                     if(index==3||index==1)
                     {
                         reloadslide();
