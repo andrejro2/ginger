@@ -1,3 +1,19 @@
+.container-ofwork {
+  position: relative;
+}
+.container-ofwork:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: white url(../images/bx_loader.gif) no-repeat center center;
+}
+.container-ofwork.__showall:before {
+  display: none;
+}
 .img-center {
   margin-right: auto;
   margin-left: auto;
@@ -93,9 +109,9 @@ header {
 .frontpage header .logo {
   display: block;
   width: 180px;
-  height: 31px;
+  height: 32px;
   background: url(../images/logo2.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .frontpage header .logo.__smaller {
   width: 127px;
@@ -144,15 +160,19 @@ header {
 }
 .fp-viewing-3rdPage header .logo {
   background: url(../images/logo1.svg) no-repeat center center;
-  background-size: cover;
-  width: 127px;
+  background-size: 100% 100%;
+  width: 128px;
   height: 22px;
   margin-top: 7px;
 }
 .frontpage.fullfront header .logo {
-  width: 127px;
+  width: 128px;
   height: 22px;
   margin-top: 7px;
+}
+.kontaktblock-buttons ul {
+  padding: 0px;
+  margin: 0px;
 }
 .frontpage.fullfront.fp-viewing-nullPage header {
   padding-top: 49px;
@@ -161,10 +181,10 @@ header {
 .frontpage.fullfront.fp-viewing-nullPage header .logo {
   display: block;
   width: 180px;
-  height: 31px;
+  height: 32px;
   margin-top: 0px;
   background: url(../images/logo1.svg) no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .frontpage.fullfront.fp-viewing-nullPage header .logo.__smaller {
   width: 127px;
@@ -660,9 +680,9 @@ header {
 .sidr-open header .logo,
 .sidr-open header .logo.__smaller {
   background: url("../images/logo1.svg") no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 180px !important;
-  height: 31px !important;
+  height: 32px !important;
   position: relative;
 }
 .fp-viewing-nullPage #simple-menu,
@@ -1147,6 +1167,8 @@ ul.__pluses li.__hovered em {
 }
 .grid-nav {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 .grid-nav li {
   display: inline-block;
@@ -1172,8 +1194,11 @@ ul.__pluses li.__hovered em {
   background: url(../images/sprite.png) no-repeat -28px 0px;
   margin-top: -8px;
 }
+.ourwork-filter h2 {
+  margin: 32px 0 0 0;
+}
 .filter-options {
-  padding: 70px 0 65px 0;
+  padding: 30px 0 65px 0;
 }
 .buttonbord {
   display: inline-block;
@@ -1372,9 +1397,10 @@ ul.__pluses li.__hovered em {
 }
 .spolupraca-popup-opener span {
   display: block;
-  padding: 35% 10px 0 10px;
+  padding: 30% 10px 0 10px;
   position: relative;
   line-height: 1.1em;
+  font-size: .9em;
   position: absolute;
   width: 100%;
   left: 0px;
@@ -1387,7 +1413,7 @@ ul.__pluses li.__hovered em {
 .spolupraca-popup-opener span.spolupraca-popup-opener-op:before {
   content: '';
   position: absolute;
-  top: 18px;
+  top: 11px;
   left: 50%;
   background: url("../images/sprite.png") no-repeat 0px 0px;
   width: 24px;
@@ -1397,7 +1423,7 @@ ul.__pluses li.__hovered em {
 .spolupraca-popup-opener span.spolupraca-popup-opener-cl:before {
   content: '';
   position: absolute;
-  top: 18px;
+  top: 11px;
   left: 50%;
   background: url("../images/close.png") no-repeat 0px 0px;
   width: 27px;
@@ -1759,7 +1785,7 @@ footer .__soc2 {
   }
   .logo {
     width: 180px !important;
-    height: 31px !important;
+    height: 32px !important;
   }
   .button {
     line-height: 1em;

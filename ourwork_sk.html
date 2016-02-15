@@ -61,11 +61,11 @@
                         <li class="active"><a href="ourwork_sk.html">Naša práca</a></li>
                         <li><a href="products_sk.html">Naše produkty</a></li>
                         <li><a href="about_sk.html">O nás </a></li>
-                        <li><a href="praca_sk.html">Spolupráca</a></li>
+                        <li><a href="praca_sk.html">Riešenia</a></li>
                         <li><a href="#" class="opencontact">Kontakt</a></li>
                     </ol>
                 </nav>
-                <a href="index_en.html" class="language_changer">EN</a>
+                <a href="ourwork_en.html" class="language_changer">EN</a>
             </div>
         </div>
     </div>
@@ -74,6 +74,7 @@
 <div class="ourwork">
 <div class="ourwork-wrapper">
 <div class="ourwork-filter">
+    <h2 class="text-center">Výber z našich prác:</h2>
     <div class="filter-options btn-group text-center">
         <ul class="grid-nav">
             <li>
@@ -228,10 +229,10 @@
                         <div class="workitem-desc-tag __notabs"><span class=" __lemon">Pre klienta</span>
                         </div>
                         <div class="prodblock-subtitle __lemoncolor">
-                            Produktová akadémia
+                            Manažéria
                         </div>
                         <div class="prodblock-text">
-                            Séria kurzov o produktoch pre predajcov
+                            Séria produktových a manažérskych kurzov pre zamestnancov
                         </div>
                     </div>
                 </div>
@@ -867,12 +868,7 @@
                         </div>
                         <div class="kontaktblock-buttons">
                             <ul>
-                                <li>
-                                    <a href="praca_sk.html" class="button __red">SPOLUPRACUJTE S NAMI</a>
-                                </li>
-                                <li>
-                                    <span>alebo</span>
-                                </li>
+
                                 <li>
                                     <a href="#" class="button __darkorange opencontact">KONTAKTUJTE NÁS</a>
                                 </li>
@@ -906,7 +902,7 @@
                         <div class="footer-white">sídlo:</div>
                     </div>
                     <div class="col-sm-9 col-xs-9">
-                        Hanulova 19, 841 02 Bratislava
+                        GINGERS s. r. o.,<br />Hanulova 19, 841 02 Bratislava
                     </div>
                 </div>
                 <div class="row __footerrow">
@@ -953,6 +949,10 @@
 <script src="assets/js/functions.js"></script>
 <script>
     $(document).ready(function () {
+        $('.container-ofwork').imagesLoaded( function() {
+            setTimeout('$(".container-ofwork").addClass("__showall")', 1000)
+        });
+
         var hash = window.location.hash.substring(1);
         bslide='';
         var $grid = $('#grid');
